@@ -20,4 +20,4 @@ https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-
 
 ## Status do Projeto
 Em desenvolvimento 
-Primeira versão estimada para []
+Primeira versão estimada para [-/12/2025]
