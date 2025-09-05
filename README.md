@@ -1,7 +1,7 @@
 # Medlinka
 
 ## Descrição
-
+O Medlinka é uma plataforma de saúde que reúne um calendário social com campanhas gratuitas, notícias e informações da área, além de ajudar a população a localizar facilmente as unidades de saúde mais próximas.
 
 ## Tecnologias Utilizadas
 -> HTML5, CSS3, JavaScript
