@@ -1,4 +1,4 @@
-<!--Cabeçalho-->
+/*Inicio cabeçalho*/
  .navbar {
   margin-bottom: 0;
   background-color: white;
@@ -77,5 +77,71 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+/*Fim do cabeçalho*/
+/*Rodapé*/
 
-<!-- FIm do Cabeçalho-->
+.footer-medlinka {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* manter estilo */
+  background: #004B54;
+  padding: 20px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  font-weight: 900;
+  font-size: 28px;
+  flex: 1 1 200px;
+  color: white;
+}
+
+.footer-section {
+  flex: 1 1 150px;
+}
+
+.footer-section h4 {
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: #FEFFBB;
+}
+
+.footer-contact-list .icon {
+  margin-right: 8px;
+  font-weight: bold;
+  color: white;
+}
+/*Fim do rodape´*/
