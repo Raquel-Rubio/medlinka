@@ -1,41 +1,81 @@
 <!--Cabeçalho-->
-.navbar {
-    margin-bottom: 0;
-    background-color: white;
-    z-index: 9999;
-    border: 0;
-    font-size: 15px !important;
-    line-height: 1 !important;
-    letter-spacing: 6px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-    size: 80%;
-    text-align: center;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: black !important;
-        display: inline-block;
-         width: 100%;
-         margin-top: 0;
-        
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #BFDFDE !important;
-    background-color: #60988F !important;
-    font-size: 100%;
-    width: 100%;
+ .navbar {
+  margin-bottom: 0;
+  background-color: white;
+  z-index: 9999;
+  border: 0;
+  font-size: 15px !important;
+  line-height: 1.4 !important; /* Melhor para suportar 2 linhas */
+  letter-spacing: 2px; /* Reduzido para não esticar tanto */
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+  size: 80%;
+  text-align: center;
+}
 
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #60988F !important;
-  }
-  .hr-nav{
-    background-color:#60988F ;
-    color: #60988F;
-    border-color: #60988F;
-    opacity: 50%;
-    margin-top: 1px;
-  }
+.navbar .navbar-nav > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px; /* 🔧 Largura igual para todos os itens */
+  height: 64px; /* 🔧 Altura fixa para todos */
+}
+
+.navbar-nav li a,
+.navbar .navbar-brand {
+  color: black !important;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  line-height: 1.3;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: #BFDFDE !important;
+  background-color: #60988F !important;
+}
+.navbar-nav > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* pega toda a altura da navbar */
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #60988F !important;
+}
+
+.hr-nav {
+  background-color: #60988F;
+  color: #60988F;
+  border-color: #60988F;
+  opacity: 50%;
+  margin-top: 1px;
+}
+/* Container que segura a lista <ul> */
+.justify-center-navbar {
+  display: flex;
+  align-items: center;   /* CENTRALIZA VERTICALMENTE */
+  justify-content: center; /* (opcional) centraliza horizontalmente */
+}
+
+/* Remove espaços extras nos links */
+.navbar-nav > li > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 <!-- FIm do Cabeçalho-->
