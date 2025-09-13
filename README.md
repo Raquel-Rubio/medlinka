@@ -19,8 +19,8 @@ O Medlinka é uma plataforma de saúde que reúne um calendário social com camp
 https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-id=1-2418&t=r7MoRt0VEImDwH0z-1
 
 ## Integrantes 
-<br>-> Letícia Mayumi Muramoto - Documentação e Front-End
-<br>-> Raquel Rubio de Souza - Back-End e 
+<br>-> Letícia Mayumi Muramoto - Documentação e Front-End 
+<br>-> Raquel Rubio de Souza - Back-End e Front-End
 <br>-> Sophia Bastista Joriatti - Full Stack e 
 
 ## Status do Projeto
