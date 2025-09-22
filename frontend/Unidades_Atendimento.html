@@ -11,7 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 <body data-page="unidades-atendimento">
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -19,7 +19,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage">
+        <img src="../assets/img/logo_medlinka.png" alt="Logo Medlinka" class="logo_medlinka" style="height: 50px; align-self: center;">
+      </a>  
     </div>
     <div class="collapse navbar-collapse justify-center-navbar" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -36,12 +38,16 @@
   </div>
 </nav>
 <main>
-    <body>
-        <h2>Unidades de pronto atendimentos </h2>
-        <div class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d117618.3549818808!2d-47.07998874196137!3d-22.892205004885845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssus%20de%20campinas!5e0!3m2!1spt-BR!2sbr!4v1758144276630!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </body>
+<body>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-sm">
+          <h2>Unidades de pronto atendimento</h2>
+          <iframe class="container-mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d117618.3549818808!2d-47.07998874196137!3d-22.892205004885845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssus%20de%20campinas!5e0!3m2!1spt-BR!2sbr!4v1758144276630!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
 </main>
 
 <footer class="footer-medlinka">
