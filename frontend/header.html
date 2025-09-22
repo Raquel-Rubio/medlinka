@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Medlinka Homepage</title>   
+  <title>Medlinka Homepage</title>   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,34 +10,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const current = document.body.getAttribute("data-page");
-    if (current) {
-        const activeItem = document.querySelector(`.navbar-nav li[data-link="${current}"]`);
-        if (activeItem) activeItem.classList.add("active");
-    }
-    });
-    </script>
-<body>
-<nav class="navbar navbar-default navbar-fixed-top">
+</head>
+<body data-page="index">
+<nav class="navbar navbar-expand-sm">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="logo.png">Logo</a>
+      <a class="navbar-brand" href="#myPage">
+        <img src="../assets/img/logo_medlinka.png" alt="Logo Medlinka" class="logo_medlinka" style="height: 50px; align-self: center;">
+      </a>  
     </div>
     <div class="collapse navbar-collapse justify-center-navbar" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-            <li data-link="index"><a href="index.html">Home</a></li>
-            <li data-link="ultimas-camapanhas"><a href="Ultimas_Campanhas.html">Últimas <br>Campanhas</a></li>
-            <li data-link="noticias"><a href="Noticias.html">Notícias</a></li>
-            <li data-link="unidades-atendimento"><a href="Unidades_Atendimento.html">Unidades de <br> Atendimento</a></li>
-            <li data-link="sobre"><a href="Sobre.html">Sobre</a></li>
-        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="Ultimas_Campanhas.html">Últimas <br>Campanhas</a></li>
+        <li><a href="Noticias.html">Notícias</a></li>
+        <li><a href="Unidades_Atendimento.html" >Unidades de <br> Atendimento</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+       <!-- <li><a href="#contact">Contato</a></li>-->
+      </ul>
+    </div>
     <hr class="hr-nav">
   </div>
 </nav>
