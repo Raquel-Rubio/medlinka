@@ -180,6 +180,5 @@
 }
 
 .card-body .card-title .card-text{
-  display: grid;
-  place-items: center;
+   text-align: center;
 }
