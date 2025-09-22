@@ -32,7 +32,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  vertical-align: middle;
+   vertical-align: middle;
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -152,5 +152,65 @@
   width: 70%;
   height: 450px;
   overflow: hidden;
-  justify-
+  margin:auto;
+}
+
+
+/* Campanhas em andamento */
+.campanhas-section {
+  margin-bottom: 100px; /* espaço antes do rodapé fixo */
+  justify-content: center;
+  position: relative;
+}
+
+.campanhas-section h3 {
+  font-weight: bold;
+  color: #1f4955;
+}
+
+.campanhas-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.campanha-card {
+  width: 300px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  vertical-align: middle;
+}
+
+.campanha-card:hover {
+  transform: scale(1.03);
+}
+
+.card-title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f4955;
+}
+
+#campanhasPrev, #campanhasNext {
+  position: relative;
+  top: 40%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f4955;
+}
+
+#campanhasPrev:hover, #campanhasNext:hover {
+  background-color: #60988F;
+  color: #BFDFDE;
+  border-radius: 50%;
 }
