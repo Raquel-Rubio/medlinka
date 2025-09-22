@@ -181,6 +181,10 @@
   vertical-align: middle;
 }
 
+.card-unidades{
+  border: none;
+}
+
 .campanha-card:hover {
   transform: scale(1.03);
 }
