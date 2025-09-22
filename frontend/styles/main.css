@@ -179,6 +179,21 @@
   transform: scale(1.03);
 }
 
+.campanha-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.campanha-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
 .campanha-card .card-title, 
 .campanha-card .card-text {
   text-align: center;
@@ -190,4 +205,57 @@
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 12px;
+}
+
+.campanhas-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding: 10px 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  align-items: center;
+}
+
+.campanhas-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.campanha-card {
+  min-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.campanha-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.campanha-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Estilos para os botões de navegação */
+#campanhasPrev, #campanhasNext {
+  background-color: #f8f9fa;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#campanhasPrev:hover, #campanhasNext:hover {
+  background-color: #007bff;
+  color: white;
 }
