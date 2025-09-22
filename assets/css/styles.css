@@ -32,7 +32,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-   vertical-align: middle;
+  vertical-align: middle;
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -81,9 +81,6 @@
 /*Rodapé*/
 
 .footer-medlinka {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   /* manter estilo */
   background: #1f4955;
@@ -213,4 +210,20 @@
   background-color: #60988F;
   color: #BFDFDE;
   border-radius: 50%;
+}
+
+.btn-primary {
+  background-color: #1f4955;
+  border: none;
+  width: 250px;
+  align-self: center;
+}
+
+.container-msg {
+  margin-bottom: 100px; /* espaço antes do rodapé fixo */
+  justify-items: center;
+  position: relative;
+  border: none;
+  border-width: 0 !important;
+  text-align: center;
 }

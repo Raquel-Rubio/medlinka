@@ -52,7 +52,7 @@
         <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
         <div class="card-body">
           <h5 class="card-title">Vacinação contra a gripe</h5>
-          <p class="card-text">Disponível até 31 de agosto em mais de 60 unidades de saúde.</p>
+          <p class="card-text">Está ativa até 31 de agosto de 2025 em mais de 60 (ou 66) centros de saúde da cidade. A vacina...</p>
         </div>
       </div>
 
@@ -60,7 +60,7 @@
         <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
         <div class="card-body">
           <h5 class="card-title">Vacinação no Shopping Bandeiras</h5>
-          <p class="card-text">Edição especial neste sábado, 23 de agosto.</p>
+          <p class="card-text">Neste sábado, 23 de agosto de 2025, haverá uma edição especial de vacinação...</p>
         </div>
       </div>
 
@@ -68,7 +68,58 @@
         <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
         <div class="card-body">
           <h5 class="card-title">Vacinação em Viracopos</h5>
-          <p class="card-text">Campanha disponível no aeroporto internacional.</p>
+          <p class="card-text">Está acontecendo uma ação de vacinação no Aeroporto Internacional de Viracopos, focada na...</p>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-sm" id="campanhasNext">❯</button> 
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const carousel = document.querySelector('.campanhas-carousel');
+  document.getElementById('campanhasPrev').addEventListener('click', () => {
+    carousel.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+  document.getElementById('campanhasNext').addEventListener('click', () => {
+    carousel.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+</script>
+</section>
+
+<section>
+<section class="campanhas-section">
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3 class="font-weight-bold">NOTÍCIAS</h3>
+    </div>
+
+    <div class="campanhas-carousel">
+      <div>
+        <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
+      </div>
+      <div class="campanha-card card shadow-sm">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
+        <div class="card-body">
+          <h5 class="card-title">Campinas entrega Hospital da Mulher</h5>
+          <p class="card-text">A Prefeitura de Campinas entrega hoje o novo Centro de Referência de...</p>
+        </div>
+      </div>
+
+      <div class="campanha-card card shadow-sm">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
+        <div class="card-body">
+          <h5 class="card-title">Vigilância Sanitária de Campinas interdita espaço clínico de faculdade no Jardim do Trevo</h5>
+          <p class="card-text">Hoje, a Vigilância Sanitária de Campinas interdita um espaço clínico de uma...</p>
+        </div>
+      </div>
+
+      <div class="campanha-card card shadow-sm">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
+        <div class="card-body">
+          <h5 class="card-title">Saúde faz nova ação contra a dengue e alerta para alto risco de transmissão em 21 bairros</h5>
+          <p class="card-text">Neste momento, a Secretaria de Saúde realiza uma nova ação contra a dengue...</p>
         </div>
       </div>
       <div>
@@ -79,21 +130,23 @@
 </section>
 
 <script>
-  const carousel = document.querySelector('.campanhas-carousel');
-  document.getElementById('campanhasPrev').addEventListener('click', () => {
+  const carousel2 = document.querySelector('.noticias-carousel');
+  document.getElementById('noticiasPrev').addEventListener('click', () => {
     carousel.scrollBy({ left: -300, behavior: 'smooth' });
   });
-  document.getElementById('campanhasNext').addEventListener('click', () => {
-    carousel.scrollBy({ left: 300, behavior: 'smooth' });
+  document.getElementById('noticiasNext').addEventListener('click', () => {
+    carousel2.scrollBy({ left: 300, behavior: 'smooth' });
   });
 </script>
+</section>
 
-  <div class="container mt-3">
+<section>
+  <div class="container-msg container mt-3">
     <div class="row">
       <div class="col-sm">
         <div class="card">
           <h3> Não está se sentindo bem ou tem algum sintoma em específico?</h3>
-          <p>Siga as instruções de procedimentos antes de se dirigir a uma unidade de saúde ! </p>
+          <p>Siga as instruções de procedimentos antes de se dirigir a uma unidade de saúde! </p>
           <button type="button" class="btn btn-primary">Acessar</button>
         </div>
       </div>
