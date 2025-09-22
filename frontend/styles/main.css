@@ -179,10 +179,15 @@
   transform: scale(1.03);
 }
 
-.card-title {
-   text-align: center;
+.campanha-card .card-title, 
+.campanha-card .card-text {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.card-text {
-  text-align: center;
+.campanha-card .card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
 }
