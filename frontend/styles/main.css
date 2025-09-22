@@ -41,7 +41,7 @@
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
   color: #BFDFDE !important;
-  background-color: #60988F !important;
+  background-color: #1f4955 !important;
 }
 .navbar-nav > li {
   display: flex;
@@ -52,13 +52,13 @@
 
 .navbar-default .navbar-toggle {
   border-color: transparent;
-  color: #60988F !important;
+  color: #1f4955 !important;
 }
 
 .hr-nav {
-  background-color: #60988F;
-  color: #60988F;
-  border-color: #60988F;
+  background-color: #1f4955;
+  color: #1f4955;
+  border-color: #1f4955;
   opacity: 50%;
   margin-top: 1px;
 }
@@ -86,7 +86,7 @@
   left: 0;
   width: 100%;
   /* manter estilo */
-  background: #004B54;
+  background: #1f4955;
   padding: 20px;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -145,3 +145,41 @@
   color: white;
 }
 /*Fim do rodape´*/
+
+/*Mapa*/
+.container-mapa {
+  border: none;
+  width: 70%;
+  height: 450px;
+  overflow: hidden;
+  margin:auto;
+}
+
+/* Campanhas em andamento */
+.campanhas-section {
+  margin-bottom: 100px; /* espaço antes do rodapé fixo */
+}
+
+.campanhas-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.campanha-card {
+  min-width: 280px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.campanha-card:hover {
+  transform: scale(1.03);
+}
+
+.card-body .card-title .card-text{
+  display: grid;
+  place-items: center;
+}
