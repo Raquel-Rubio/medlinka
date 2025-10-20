@@ -81,9 +81,6 @@
 /*Rodapé*/
 
 .footer-medlinka {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   /* manter estilo */
   background: #1f4955;
@@ -155,9 +152,17 @@
   margin:auto;
 }
 
+
 /* Campanhas em andamento */
 .campanhas-section {
   margin-bottom: 100px; /* espaço antes do rodapé fixo */
+  justify-content: center;
+  position: relative;
+}
+
+.campanhas-section h3 {
+  font-weight: bold;
+  color: #1f4955;
 }
 
 .campanhas-carousel {
@@ -169,16 +174,60 @@
 }
 
 .campanha-card {
-  min-width: 280px;
+  width: 300px;
   flex: 0 0 auto;
   border-radius: 10px;
   transition: transform 0.2s;
+  vertical-align: middle;
+}
+
+.card-unidades{
+  border: none;
 }
 
 .campanha-card:hover {
   transform: scale(1.03);
 }
 
-.h3 {
+.card-title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f4955;
+}
+
+#campanhasPrev, #campanhasNext {
+  position: relative;
+  top: 40%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f4955;
+}
+
+#campanhasPrev:hover, #campanhasNext:hover {
+  background-color: #60988F;
+  color: #BFDFDE;
+  border-radius: 50%;
+}
+
+.btn-primary {
+  background-color: #1f4955;
+  border: none;
+  width: 250px;
+  align-self: center;
+}
+
+.container-msg {
+  margin-bottom: 100px; /* espaço antes do rodapé fixo */
+  justify-items: center;
+  position: relative;
+  border: none;
+  border-width: 0 !important;
   text-align: center;
 }
