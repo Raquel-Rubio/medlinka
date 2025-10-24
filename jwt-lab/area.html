@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Área Restrita - JWT Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div id="userName">Usuário</div>
+        <div class="actions">
+            <button id="openJwt">Abrir no jwt.io</button>
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Bem-vindo à área restrita</h2>
+        <p>Verifique o token no jwt.io. Se não houver token, você será redirecionado para o login.</p>
+    </main>
+
+    <script>
+        function base64UrlDecode(str) {
+            // base64url -> base64
+            str = str.replace(/-/g, '+').replace(/_/g, '/');
+            // put padding back
+            while (str.length % 4) str += '=';
+            try {
+                return atob(str);
+            } catch (e) {
+                return null;
+            }
+        }
+
+        const token = localStorage.getItem('jwt_token');
+        if (!token) {
+            alert('Acesso bloqueado: token não encontrado. Redirecionando para login.');
+            window.location.href = 'index.html';
+        } else {
+            // Exibe nome decodificado
+            const parts = token.split('.');
+            let name = 'Usuário';
+            if (parts.length === 3) {
+                const payload = base64UrlDecode(parts[1]);
+                if (payload) {
+                    try {
+                        const obj = JSON.parse(payload);
+                        name = obj.name || obj.nome || name;
+                    } catch (e) {
+                        // manter padrão
+                    }
+                }
+            }
+            document.getElementById('userName').textContent = name;
+        }
+
+        document.getElementById('logout').addEventListener('click', function(){
+            localStorage.removeItem('jwt_token');
+            window.location.href = 'index.html';
+        });
+
+        document.getElementById('openJwt').addEventListener('click', function(){
+            // Abre jwt.io com o token preenchido (lado esquerdo Encoded)
+            const url = 'https://jwt.io/#encoded=' + encodeURIComponent(token);
+            window.open(url, '_blank');
+            // Lembre-se de colocar em "Verify Signature" a chave: my-secret-key
+        });
+    </script>
+</body>
+</html>

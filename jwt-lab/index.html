@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Login - JWT Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label>
+                E-mail
+                <input type="email" id="email" required />
+            </label>
+            <label>
+                Senha
+                <input type="password" id="password" required />
+            </label>
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="note">Token de exemplo será salvo no localStorage e usuário será redirecionado para a área restrita.</p>
+    </main>
+
+    <script>
+        // Token fixo fornecido
+        const FIXED_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIzLCJuYW1lIjoiRW5nLiBDb21wdXRhXHUwMGU3XHUwMGUzbyIsInJvbGUiOiJKV1QiLCJpYXQiOjE3NTk5ODEzMTcsImV4cCI6MTc1OTk4NDkxN30.b1KfcSFInRwYnvRA0Ae5jYuL59KZmCsufPgISNGq0X0";
+
+        document.getElementById('loginForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (!email || !password) {
+                alert('Preencha e-mail e senha.');
+                return;
+            }
+
+            // Salva token fixo e redireciona
+            localStorage.setItem('jwt_token', FIXED_TOKEN);
+            window.location.href = 'area.html';
+        });
+    </script>
+</body>
+</html>
