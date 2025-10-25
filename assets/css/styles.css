@@ -72,14 +72,15 @@
       transition: transform 0.3s ease;
     }
 
-    /* Pequena animação de rotação */
-    .navbar-toggler.collapsed i {
+/* Pequena animação de rotação */
+.navbar-toggler.collapsed i {
       transform: rotate(0deg);
     }
 
-    .navbar-toggler:not(.collapsed) i {
+.navbar-toggler:not(.collapsed) i {
       transform: rotate(90deg);
     }
+
 /* Container que segura a lista <ul> */
 .justify-center-navbar {
   display: flex;
@@ -225,7 +226,7 @@
 /*título unidades de atendimento*/
 .titulo-unidades {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 1.6;
 
 }
