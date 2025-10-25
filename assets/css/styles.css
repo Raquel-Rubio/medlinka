@@ -210,6 +210,12 @@
 }
 /*Fim do rodape´*/
 
+/*Geral*/
+.titulos {
+  font-weight: bold;
+  color: #1f4955;
+}
+
 /*Mapa*/
 .map-container {
   border: none;
@@ -299,3 +305,4 @@
   border-width: 0 !important;
   text-align: center;
 }
+
