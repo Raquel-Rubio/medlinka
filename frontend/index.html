@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Medlinka Homepage</title>
+  <title>Medlinka Homepage</title>   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 <body data-page="index">
-  <nav class="navbar navbar-expand-sm">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#myPage">
-          <img src="../assets/img/logo_medlinka.png" alt="Logo Medlinka" class="logo_medlinka" style="height: 50px; align-self: center;">
-        </a>
-      </div>
-      <div class="collapse navbar-collapse justify-center-navbar" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="Ultimas_Campanhas.html">Últimas <br>Campanhas</a></li>
-          <li><a href="Noticias.html">Notícias</a></li>
-          <li><a href="Unidades_Atendimento.html" >Unidades de <br> Atendimento</a></li>
-          <li><a href="Sobre.html">Sobre</a></li>
-          <!-- <li><a href="#contact">Contato</a></li>-->
+      <a class="navbar-brand" href="index.html">
+        <img src="../assets/img/logo_medlinka.png" alt="Logo Medlinka" class="logo_medlinka">
+      </a>
+
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNavbar"
+        aria-controls="myNavbar" aria-expanded="false" aria-label="Alternar navegação">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
+          <li class="nav-item"><a class="nav-link" href="Noticias.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
+          <li class="nav-item"><a class="nav-link" href="Sobre.html">Sobre</a></li>
         </ul>
       </div>
-      <hr class="hr-nav">
     </div>
   </nav>
+
+  <script>
+    $(document).ready(function () {
+      $('.navbar-toggler').click(function () {
+        $(this).find('i').toggleClass('fa-bars fa-times');
+      });
+    });
+  </script>
 <main>
 <section>
 <section class="campanhas-section">
   <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
-      <h3 class="text-uppercase font-weight-bold">Campanhas em Andamento</h3>
+      <h3 class="titulos">CAMPANHAS EM ANDAMENTO</h3>
     </div>
 
     <div class="campanhas-carousel">
@@ -49,35 +59,34 @@
         <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
       </div>
       <div class="campanha-card card shadow-sm">
-        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Vacinação Gripe">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
         <div class="card-body">
           <h5 class="card-title">Vacinação contra a gripe</h5>
-          <p class="card-text">Disponível até 31 de agosto em mais de 60 unidades de saúde.</p>
+          <p class="card-text">Está ativa até 31 de agosto de 2025 em mais de 60 (ou 66) centros de saúde da cidade. A vacina...</p>
         </div>
       </div>
 
       <div class="campanha-card card shadow-sm">
-        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Shopping Bandeiras">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
         <div class="card-body">
           <h5 class="card-title">Vacinação no Shopping Bandeiras</h5>
-          <p class="card-text">Edição especial neste sábado, 23 de agosto.</p>
+          <p class="card-text">Neste sábado, 23 de agosto de 2025, haverá uma edição especial de vacinação...</p>
         </div>
       </div>
 
       <div class="campanha-card card shadow-sm">
-        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Viracopos">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
         <div class="card-body">
           <h5 class="card-title">Vacinação em Viracopos</h5>
-          <p class="card-text">Campanha disponível no aeroporto internacional.</p>
+          <p class="card-text">Está acontecendo uma ação de vacinação no Aeroporto Internacional de Viracopos, focada na...</p>
         </div>
       </div>
       <div>
-        <button class="btn btn-outline-primary btn-sm" id="campanhasNext"></button>
+        <button class="btn btn-sm" id="campanhasNext">❯</button> 
       </div>
     </div>
   </div>
 </section>
-
 <script>
   const carousel = document.querySelector('.campanhas-carousel');
   document.getElementById('campanhasPrev').addEventListener('click', () => {
@@ -87,13 +96,67 @@
     carousel.scrollBy({ left: 300, behavior: 'smooth' });
   });
 </script>
+</section>
 
-  <div class="container mt-3">
+<section>
+<section class="campanhas-section">
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3 class="titulos">NOTÍCIAS</h3>
+    </div>
+
+    <div class="campanhas-carousel">
+      <div>
+        <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
+      </div>
+      <div class="campanha-card card shadow-sm">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
+        <div class="card-body">
+          <h5 class="card-title">Campinas entrega Hospital da Mulher</h5>
+          <p class="card-text">A Prefeitura de Campinas entrega hoje o novo Centro de Referência de...</p>
+        </div>
+      </div>
+
+      <div class="campanha-card card shadow-sm">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
+        <div class="card-body">
+          <h5 class="card-title">Vigilância Sanitária de Campinas interdita espaço clínico de faculdade no Jardim do Trevo</h5>
+          <p class="card-text">Hoje, a Vigilância Sanitária de Campinas interdita um espaço clínico de uma...</p>
+        </div>
+      </div>
+
+      <div class="campanha-card card shadow-sm">
+        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
+        <div class="card-body">
+          <h5 class="card-title">Saúde faz nova ação contra a dengue e alerta para alto risco de transmissão em 21 bairros</h5>
+          <p class="card-text">Neste momento, a Secretaria de Saúde realiza uma nova ação contra a dengue...</p>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-sm" id="campanhasNext">❯</button> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const carousel2 = document.querySelector('.noticias-carousel');
+  document.getElementById('noticiasPrev').addEventListener('click', () => {
+    carousel.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+  document.getElementById('noticiasNext').addEventListener('click', () => {
+    carousel2.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+</script>
+</section>
+
+<section>
+  <div class="container-msg container mt-3">
     <div class="row">
       <div class="col-sm">
-        <div class="card">
+        <div class="card card-unidades">
           <h3> Não está se sentindo bem ou tem algum sintoma em específico?</h3>
-          <p>Siga as instruções de procedimentos antes de se dirigir a uma unidade de saúde ! </p>
+          <p>Siga as instruções de procedimentos antes de se dirigir a uma unidade de saúde! </p>
           <button type="button" class="btn btn-primary">Acessar</button>
         </div>
       </div>
@@ -126,7 +189,7 @@
 <footer class="footer-medlinka">
   <div class="container-footer">
     <div class="footer-logo">
-        <img src="../assets/img/logo_medlinka_br.png" alt="Logo Medlinka" class="logo_medlinka" style="height: 50px; align-self: center;">
+        <img src="../assets/img/logo_medlinka_br.png" alt="Logo Medlinka" class="logo_footer">
     </div>
     <div class="footer-section">
       <h4>Novidades</h4>
