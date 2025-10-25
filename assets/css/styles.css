@@ -211,12 +211,13 @@
 /*Fim do rodape´*/
 
 /*Mapa*/
-.container-mapa {
+.map-container {
   border: none;
   width: 70%;
-  height: 450px;
+  height: 650px;
   overflow: hidden;
-  margin:auto;
+  margin-bottom: 50px;
+  
 }
 
 
