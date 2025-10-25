@@ -223,11 +223,21 @@
   border-radius: 10px;
 }
 
+
+
 /*geral*/
 .titulos {
   font-weight: bold;
   color: #1f4955;
-  line-height: 1.8
+  line-height: 1.8;
+  margin:auto;
+}
+
+.titulos-locais {
+  font-weight: bold;
+  line-height: 1.8;
+  margin: auto;
+  align-self: center;
 }
 
 /* Campanhas em andamento */
