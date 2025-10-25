@@ -227,16 +227,8 @@
 .titulos {
   font-weight: bold;
   color: #1f4955;
+  line-height: 1.8
 }
-
-/*título unidades de atendimento*/
-.titulo-unidades {
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  line-height: 1.6;
-
-}
-
 
 /* Campanhas em andamento */
 .campanhas-section {
