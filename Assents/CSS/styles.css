@@ -146,10 +146,10 @@
 /*Mapa*/
 .map-container {
   border: none;
-  width: 70%;
+  width: 80%;
   height: 600px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin: auto;
 }
 
 
