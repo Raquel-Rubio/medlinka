@@ -147,9 +147,10 @@
 .map-container {
   border: none;
   width: 80%;
-  height: 600px;
+  height: 650px;
   overflow: hidden;
-  margin: auto;
+  margin-bottom: 50px;
+  
 }
 
 
