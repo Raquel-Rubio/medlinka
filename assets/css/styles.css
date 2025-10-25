@@ -223,6 +223,12 @@
   border-radius: 10px;
 }
 
+/*geral*/
+.titulos {
+  font-weight: bold;
+  color: #1f4955;
+}
+
 /*título unidades de atendimento*/
 .titulo-unidades {
   text-align: center;
@@ -237,11 +243,6 @@
   margin-bottom: 100px; /* espaço antes do rodapé fixo */
   justify-content: center;
   position: relative;
-}
-
-.campanhas-section h3 {
-  font-weight: bold;
-  color: #1f4955;
 }
 
 .campanhas-carousel {
