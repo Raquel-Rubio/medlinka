@@ -214,10 +214,20 @@
 .map-container {
   border: none;
   width: 70%;
-  height: 850px;
+  height: 450px;
   overflow: hidden;
-  margin: auto;
-  
+  margin:auto;
+  align-self: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/*título unidades de atendimento*/
+.titulo-unidades {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
 }
 
 
@@ -299,3 +309,5 @@
   border-width: 0 !important;
   text-align: center;
 }
+
+
