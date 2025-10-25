@@ -224,18 +224,37 @@
 }
 
 
+.container-unidades {
+  display: flex;
+  flex-direction: column;
+  border-color: 2px solid #1f4955;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-width: 0 !important;
+  margin-bottom: 20px;
+}
+
+.container-inf {
+  border: 2px solid #1f4955;
+  line-height: 0.5;
+  flex-direction: column;
+}
 
 /*geral*/
 .titulos {
   font-weight: bold;
   color: #1f4955;
   line-height: 1.8;
-  margin:auto;
+  margin-inline:auto;
 }
 
 .titulos-locais {
   font-weight: bold;
-  line-height: 1.8;
+  line-height: 2;
   margin: auto;
   align-self: center;
 }
