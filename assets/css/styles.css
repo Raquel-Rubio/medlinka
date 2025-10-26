@@ -245,12 +245,19 @@
   margin-inline: auto;
 }
 
+/*titulos-uni-map*/
+.titulos-uni-map {
+  font-weight: bold;
+  color: #1f4955;
+  line-height: 1.8;
+  margin-inline:auto;
+}
+
 /*geral*/
 .titulos {
   font-weight: bold;
   color: #1f4955;
   line-height: 1.8;
-  margin-inline:auto;
 }
 
 .titulos-locais {
