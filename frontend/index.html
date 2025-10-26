@@ -1,277 +1,254 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <title>Medlinka Homepage</title>   
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+  <head>
+    <title>Medlinka Homepage</title>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-</head>
-<body data-page="index">
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="../assets/img/logo_medlinka.png" alt="Logo Medlinka" class="logo_medlinka">
-      </a>
-
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNavbar"
-        aria-controls="myNavbar" aria-expanded="false" aria-label="Alternar navegação">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
-          <li class="nav-item"><a class="nav-link" href="Noticias.html">Notícias</a></li>
-          <li class="nav-item"><a class="nav-link" href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
-          <li class="nav-item"><a class="nav-link" href="Sobre.html">Sobre</a></li>
-        </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body data-page="index">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="../assets/img/logo_medlinka.png" alt="Logo Medlinka" class="logo_medlinka">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Alternar navegação">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
+            <li class="nav-item"><a class="nav-link" href="Noticias.html">Notícias</a></li>
+            <li class="nav-item"><a class="nav-link" href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
+            <li class="nav-item"><a class="nav-link" href="Sobre.html">Sobre</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <script>
-    $(document).ready(function () {
+    </nav>
+    <script>
+      $(document).ready(function () {
       $('.navbar-toggler').click(function () {
-        $(this).find('i').toggleClass('fa-bars fa-times');
+      $(this).find('i').toggleClass('fa-bars fa-times');
       });
-    });
-  </script>
-<main>
-<section>
-<section class="campanhas-section">
-  <div class="container mt-4">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <h3 class="titulos">CAMPANHAS EM ANDAMENTO</h3>
-    </div>
-
-    <div class="campanhas-carousel">
-      <div>
-        <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
-      </div>
-      <div class="campanha-card card shadow-sm">
-        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
-        <div class="card-body">
-          <h5 class="card-title">Vacinação contra a gripe</h5>
-          <p class="card-text">Está ativa até 31 de agosto de 2025 em mais de 60 (ou 66) centros de saúde da cidade. A vacina...</p>
+      });
+    </script>
+    <main>
+      <section>
+        <section class="campanhas-section">
+          <div class="container mt-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h3 class="titulos">CAMPANHAS EM ANDAMENTO</h3>
+            </div>
+            <div class="campanhas-carousel">
+              <div>
+                <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
+              </div>
+              <div class="campanha-card card shadow-sm">
+                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
+                <div class="card-body">
+                  <h5 class="card-title">Vacinação contra a gripe</h5>
+                  <p class="card-text">Está ativa até 31 de agosto de 2025 em mais de 60 (ou 66) centros de saúde da cidade. A vacina...</p>
+                </div>
+              </div>
+              <div class="campanha-card card shadow-sm">
+                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
+                <div class="card-body">
+                  <h5 class="card-title">Vacinação no Shopping Bandeiras</h5>
+                  <p class="card-text">Neste sábado, 23 de agosto de 2025, haverá uma edição especial de vacinação...</p>
+                </div>
+              </div>
+              <div class="campanha-card card shadow-sm">
+                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
+                <div class="card-body">
+                  <h5 class="card-title">Vacinação em Viracopos</h5>
+                  <p class="card-text">Está acontecendo uma ação de vacinação no Aeroporto Internacional de Viracopos, focada na...</p>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-sm" id="campanhasNext">❯</button> 
+              </div>
+            </div>
+          </div>
+        </section>
+        <script>
+          const carousel = document.querySelector('.campanhas-carousel');
+          document.getElementById('campanhasPrev').addEventListener('click', () => {
+          carousel.scrollBy({ left: -300, behavior: 'smooth' });
+          });
+          document.getElementById('campanhasNext').addEventListener('click', () => {
+          carousel.scrollBy({ left: 300, behavior: 'smooth' });
+          });
+        </script>
+      </section>
+      <section>
+        <section class="campanhas-section">
+          <div class="container mt-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h3 class="titulos">NOTÍCIAS</h3>
+            </div>
+            <div class="campanhas-carousel">
+              <div>
+                <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
+              </div>
+              <div class="campanha-card card shadow-sm">
+                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
+                <div class="card-body">
+                  <h5 class="card-title">Campinas entrega Hospital da Mulher</h5>
+                  <p class="card-text">A Prefeitura de Campinas entrega hoje o novo Centro de Referência de...</p>
+                </div>
+              </div>
+              <div class="campanha-card card shadow-sm">
+                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
+                <div class="card-body">
+                  <h5 class="card-title">Vigilância Sanitária de Campinas interdita espaço clínico de faculdade no Jardim do Trevo</h5>
+                  <p class="card-text">Hoje, a Vigilância Sanitária de Campinas interdita um espaço clínico de uma...</p>
+                </div>
+              </div>
+              <div class="campanha-card card shadow-sm">
+                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
+                <div class="card-body">
+                  <h5 class="card-title">Saúde faz nova ação contra a dengue e alerta para alto risco de transmissão em 21 bairros</h5>
+                  <p class="card-text">Neste momento, a Secretaria de Saúde realiza uma nova ação contra a dengue...</p>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-sm" id="campanhasNext">❯</button> 
+              </div>
+            </div>
+          </div>
+        </section>
+        <script>
+          const carousel2 = document.querySelector('.noticias-carousel');
+          document.getElementById('noticiasPrev').addEventListener('click', () => {
+          carousel.scrollBy({ left: -300, behavior: 'smooth' });
+          });
+          document.getElementById('noticiasNext').addEventListener('click', () => {
+          carousel2.scrollBy({ left: 300, behavior: 'smooth' });
+          });
+        </script>
+      </section>
+      <section>
+        <div class="container-msg container mt-3">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card card-unidades">
+                <h3> Não está se sentindo bem ou tem algum sintoma em específico?</h3>
+                <p>Siga as instruções de procedimentos antes de se dirigir a uma unidade de saúde! </p>
+                <button type="button" class="btn btn-primary">Acessar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="titulos">CALENDÁRIO DE CAMPANHAS</h3>
         </div>
       </div>
-
-      <div class="campanha-card card shadow-sm">
-        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
-        <div class="card-body">
-          <h5 class="card-title">Vacinação no Shopping Bandeiras</h5>
-          <p class="card-text">Neste sábado, 23 de agosto de 2025, haverá uma edição especial de vacinação...</p>
+      <div class="container py-4">
+        <div class="card shadow-sm p-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <button id="prevMonth" class="btn btn-outline-primary btn-sm">&lt;</button>
+              <h4 id="monthYear" class="mb-0 text-capitalize"></h4>
+            <button id="nextMonth" class="btn btn-outline-primary btn-sm">&gt;</button>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center mb-3" id="calendar">
+              <thead class="thead-light">
+                <tr>
+                  <th>Dom</th>
+                  <th>Seg</th>
+                  <th>Ter</th>
+                  <th>Qua</th>
+                  <th>Qui</th>
+                  <th>Sex</th>
+                  <th>Sáb</th>
+                </tr>
+              </thead>
+              <tbody id="calendar-body"></tbody>
+            </table>
+          </div>
+          <div class="form-group">
+            <label for="campaignSelect" class="font-weight-bold">Selecionar Campanha:</label>
+            <select id="campaignSelect" class="form-control">
+              <option value="all">Todas as campanhas</option>
+              <option value="outubroRosa">Outubro Rosa</option>
+              <option value="novembroAzul">Novembro Azul</option>
+              <option value="vacinacao">Vacinação</option>
+            </select>
+          </div>
+          <!-- Legendas -->
+          <div class="d-flex flex-wrap justify-content-around mb-2">
+            <div><span class="legend bg-pink"></span> Outubro Rosa</div>
+            <div><span class="legend bg-blue"></span> Novembro Azul</div>
+            <div><span class="legend bg-green"></span> Vacinação</div>
+          </div>
+          <div id="legendaCampanhas" class="text-center mt-3 small text-muted"></div>
         </div>
       </div>
-
-      <div class="campanha-card card shadow-sm">
-        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
-        <div class="card-body">
-          <h5 class="card-title">Vacinação em Viracopos</h5>
-          <p class="card-text">Está acontecendo uma ação de vacinação no Aeroporto Internacional de Viracopos, focada na...</p>
+      <!-- Modal -->
+      <div class="modal fade" id="campaignModal" tabindex="-1" role="dialog" aria-labelledby="campaignModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title" id="campaignModalLabel">Detalhes da Campanha</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>       
+            </div>
+            <div class="modal-body">
+              <h5 id="modalCampaignName"></h5>
+              <p><strong>Período:</strong> <span id="modalCampaignPeriod"></span></p>
+              <p id="modalCampaignDescription"></p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" id="modalCampaignLink" class="btn btn-primary" target="_blank">Saiba mais</a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <button class="btn btn-sm" id="campanhasNext">❯</button> 
-      </div>
-    </div>
-  </div>
-</section>
-<script>
-  const carousel = document.querySelector('.campanhas-carousel');
-  document.getElementById('campanhasPrev').addEventListener('click', () => {
-    carousel.scrollBy({ left: -300, behavior: 'smooth' });
-  });
-  document.getElementById('campanhasNext').addEventListener('click', () => {
-    carousel.scrollBy({ left: 300, behavior: 'smooth' });
-  });
-</script>
-</section>
-
-<section>
-<section class="campanhas-section">
-  <div class="container mt-4">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <h3 class="titulos">NOTÍCIAS</h3>
-    </div>
-
-    <div class="campanhas-carousel">
-      <div>
-        <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
-      </div>
-      <div class="campanha-card card shadow-sm">
-        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
-        <div class="card-body">
-          <h5 class="card-title">Campinas entrega Hospital da Mulher</h5>
-          <p class="card-text">A Prefeitura de Campinas entrega hoje o novo Centro de Referência de...</p>
-        </div>
-      </div>
-
-      <div class="campanha-card card shadow-sm">
-        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
-        <div class="card-body">
-          <h5 class="card-title">Vigilância Sanitária de Campinas interdita espaço clínico de faculdade no Jardim do Trevo</h5>
-          <p class="card-text">Hoje, a Vigilância Sanitária de Campinas interdita um espaço clínico de uma...</p>
-        </div>
-      </div>
-
-      <div class="campanha-card card shadow-sm">
-        <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
-        <div class="card-body">
-          <h5 class="card-title">Saúde faz nova ação contra a dengue e alerta para alto risco de transmissão em 21 bairros</h5>
-          <p class="card-text">Neste momento, a Secretaria de Saúde realiza uma nova ação contra a dengue...</p>
-        </div>
-      </div>
-      <div>
-        <button class="btn btn-sm" id="campanhasNext">❯</button> 
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  const carousel2 = document.querySelector('.noticias-carousel');
-  document.getElementById('noticiasPrev').addEventListener('click', () => {
-    carousel.scrollBy({ left: -300, behavior: 'smooth' });
-  });
-  document.getElementById('noticiasNext').addEventListener('click', () => {
-    carousel2.scrollBy({ left: 300, behavior: 'smooth' });
-  });
-</script>
-</section>
-
-<section>
-  <div class="container-msg container mt-3">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card card-unidades">
-          <h3> Não está se sentindo bem ou tem algum sintoma em específico?</h3>
-          <p>Siga as instruções de procedimentos antes de se dirigir a uma unidade de saúde! </p>
-          <button type="button" class="btn btn-primary">Acessar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="container mt-4">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <h3 class="titulos">CALENDÁRIO DE CAMPANHAS</h3>
-    </div>
-  </div>
-         <div class="container py-4">
-    <div class="card shadow-sm p-3">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <button id="prevMonth" class="btn btn-outline-primary btn-sm">&lt;</button>
-        <h4 id="monthYear" class="mb-0 text-capitalize"></h4>
-        <button id="nextMonth" class="btn btn-outline-primary btn-sm">&gt;</button>
-      </div>
-
-      <div class="table-responsive">
-        <table class="table table-bordered text-center mb-3" id="calendar">
-          <thead class="thead-light">
-            <tr>
-              <th>Dom</th>
-              <th>Seg</th>
-              <th>Ter</th>
-              <th>Qua</th>
-              <th>Qui</th>
-              <th>Sex</th>
-              <th>Sáb</th>
-            </tr>
-          </thead>
-          <tbody id="calendar-body"></tbody>
-        </table>
-      </div>
-
-      <div class="form-group">
-        <label for="campaignSelect" class="font-weight-bold">Selecionar Campanha:</label>
-        <select id="campaignSelect" class="form-control">
-          <option value="all">Todas as campanhas</option>
-          <option value="outubroRosa">Outubro Rosa</option>
-          <option value="novembroAzul">Novembro Azul</option>
-          <option value="vacinacao">Vacinação</option>
-        </select>
-      </div>
-
-      <!-- Legendas -->
-      <div class="d-flex flex-wrap justify-content-around mb-2">
-        <div><span class="legend bg-pink"></span> Outubro Rosa</div>
-        <div><span class="legend bg-blue"></span> Novembro Azul</div>
-        <div><span class="legend bg-green"></span> Vacinação</div>
-      </div>
-
-      <div id="legendaCampanhas" class="text-center mt-3 small text-muted"></div>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="campaignModal" tabindex="-1" role="dialog" aria-labelledby="campaignModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title" id="campaignModalLabel">Detalhes da Campanha</h5>
-          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
-          </button>       
-
-        </div>
-         <div class="modal-body">
-          <h5 id="modalCampaignName"></h5>
-          <p><strong>Período:</strong> <span id="modalCampaignPeriod"></span></p>
-          <p id="modalCampaignDescription"></p>
-        </div>
-        <div class="modal-footer">
-          <a href="#" id="modalCampaignLink" class="btn btn-primary" target="_blank">Saiba mais</a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<script src="../assets/js/calendar.js"></script>
-
+      <script src="../assets/js/calendar.js"></script>
     </main>
     <br>
-
-<footer class="footer-medlinka">
-  <div class="container-footer">
-    <div class="footer-logo">
-        <img src="../assets/img/logo_medlinka_br.png" alt="Logo Medlinka" class="logo_footer">
-    </div>
-    <div class="footer-section">
-      <h4>Novidades</h4>
-      <ul>
-        <li><a href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
-        <li><a href="Noticias.html">Notícias</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Informações</h4>
-      <ul>
-        <li><a href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
-        <li><a href="Sobre.html">Sobre</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Contato</h4>
-      <ul class="footer-contact-list">
-        <li style="color: white;"><span class="icon">💬</span> (19) 98800-0000</li>
-        <li style="color: white;"><span class="icon">@</span>medlinkaatendimento@gmail.com</li>
-      </ul>
-    </div>
-  </div>
-</footer>
-</body>
+    <footer class="footer-medlinka">
+      <div class="container-footer">
+        <div class="footer-logo">
+          <img src="../assets/img/logo_medlinka_br.png" alt="Logo Medlinka" class="logo_footer">
+        </div>
+        <div class="footer-section">
+          <h4>Novidades</h4>
+          <ul>
+            <li><a href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
+            <li><a href="Noticias.html">Notícias</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Informações</h4>
+          <ul>
+            <li><a href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <ul class="footer-contact-list">
+            <li style="color: white;"><span class="icon">💬</span> (19) 98800-0000</li>
+            <li style="color: white;"><span class="icon">@</span>medlinkaatendimento@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
