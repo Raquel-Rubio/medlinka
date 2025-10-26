@@ -1,3 +1,7 @@
+
+*{
+  font-family: 'Source Sans 3', sans-serif;
+}
 /*Inicio cabeçalho*/
  .navbar {
   margin-bottom: 0;
@@ -8,7 +12,6 @@
   line-height: 1.4 !important; /* Melhor para suportar 2 linhas */
   letter-spacing: 2px; /* Reduzido para não esticar tanto */
   border-radius: 0;
-  font-family: Montserrat, sans-serif;
   size: 80%;
   width: 100%
   text-align: center;
@@ -66,21 +69,33 @@
   color: #1f4955 !important;
 }
 
+.navbar-toggler {
+  margin: 0 auto;
+  display: block;
+
+}
+
 .navbar-toggler i {
       font-size: 1.5rem;
-      color: #333;
+      color: #60988F;
       transition: transform 0.3s ease;
+      text-align: center;
+      align-self: center;
     }
 
-/* Pequena animação de rotação */
-.navbar-toggler.collapsed i {
+    /* Pequena animação de rotação */
+    .navbar-toggler.collapsed i {
       transform: rotate(0deg);
+      color: 
     }
 
-.navbar-toggler:not(.collapsed) i {
+    .navbar-toggler:not(.collapsed) i {
       transform: rotate(90deg);
     }
-
+.navbar-toggler button{
+  align-self: center;
+  text-align: center;
+}
 /* Container que segura a lista <ul> */
 .justify-center-navbar {
   display: flex;
@@ -122,19 +137,6 @@
   }
   .nav-list.active {
     display: block; /* Mostra a lista de links quando a classe 'active' for adicionada */
-  }
-  .menu-mobile {
-    display: block; /* Mostra o ícone do menu no mobile */
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-  .menu-mobile .line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: transform 0.3s ease;
   }
 }
 
@@ -211,8 +213,120 @@
 }
 /*Fim do rodape´*/
 
+
+/*Botão do index*/
+#Acessar{
+  background-color: #6C9259;
+
+}
+
+
+/*Calendário*/
+
+#calendar {
+  table-layout: fixed;
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+#calendar th, #calendar td {
+  width: 14.28%;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.bg-pink {
+  background-color: #f06292;
+}
+
+.bg-blue {
+  background-color: #64b5f6;
+}
+
+.bg-green {
+  background-color: #81c784;
+}
+
+.legend {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.gradient-pink {
+  background: linear-gradient(to right, #f8bbd0, #f06292);
+}
+
+.gradient-blue {
+  background: linear-gradient(to right, #bbdefb, #64b5f6);
+}
+
+.gradient-green {
+  background: linear-gradient(to right, #c8e6c9, #81c784);
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  #calendar th, #calendar td {
+    height: 45px;
+    font-size: 0.75rem;
+  }
+
+  .legend {
+    width: 14px;
+    height: 14px;
+  }
+
+  h4#monthYear {
+    font-size: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+}
+/* círculo preenchido atrás do número do dia atual */
+.today-circle-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 34px;      /* tamanho do círculo — ajusta se quiser maior/menor */
+  height: 34px;
+  background-color: #FEFFBB; /* amarelo claro preenchido */
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(255, 235, 59, 0.35);
+  z-index: 0;
+}
+
+/* número do dia — colocado acima do círculo */
+.day-number {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* se quiser o número em negrito quando dentro do círculo */
+.day-number-on-circle {
+  font-weight: 700;
+  color: #000; /* contraste preto sobre amarelo claro */
+}
+
+/* pequena responsividade: círculo menor em telas pequenas */
+@media (max-width: 576px) {
+  .today-circle-bg {
+    width: 26px;
+    height: 26px;
+  }
+  .day-number-on-circle { font-size: 0.9rem; }
+}
+
+
 /*Mapa*/
-.map-container {
+.container-mapa {
   border: none;
   width: 70%;
   height: 450px;
@@ -222,8 +336,6 @@
   text-align: center;
   border-radius: 10px;
 }
-
-
 .container-unidades {
   display: flex;
   flex-direction: column;
@@ -237,7 +349,6 @@
   border-width: 0 !important;
   margin-bottom: 20px;
 }
-
 .container-inf {
   border: 2px solid #1f4955;
   line-height: 0.5;
@@ -245,12 +356,19 @@
   margin-inline: auto;
 }
 
+/*titulos-uni-map*/
+.titulos-uni-map {
+  font-weight: bold;
+  color: #1f4955;
+  line-height: 1.8;
+  margin-inline:auto;
+}
+
 /*geral*/
 .titulos {
   font-weight: bold;
   color: #1f4955;
   line-height: 1.8;
-  margin-inline:auto;
 }
 
 .titulos-locais {
@@ -296,7 +414,6 @@
   font-weight: bold;
   color: #1f4955;
 }
-
 #campanhasPrev, #campanhasNext {
   position: relative;
   top: 40%;
@@ -333,5 +450,6 @@
   border-width: 0 !important;
   text-align: center;
 }
+
 
 
