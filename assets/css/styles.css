@@ -420,7 +420,7 @@
 
 
 /*Mapa*/
-.container-mapa {
+.map-container{
   border: none;
   width: 70%;
   height: 450px;
@@ -430,6 +430,7 @@
   text-align: center;
   border-radius: 10px;
 }
+
 .container-unidades {
   display: flex;
   flex-direction: column;
@@ -443,7 +444,7 @@
   border-width: 0 !important;
   margin-bottom: 20px;
 }
-.container-inf {
+.container-dados {
   border: 2px solid #1f4955;
   line-height: 0.5;
   flex-direction: column;
