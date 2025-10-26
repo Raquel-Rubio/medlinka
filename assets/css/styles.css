@@ -13,7 +13,7 @@
   letter-spacing: 2px; /* Reduzido para não esticar tanto */
   border-radius: 0;
   size: 80%;
-  width: 100%
+  width: 100%;
   text-align: center;
   position: sticky;
   top: 0;
@@ -86,7 +86,6 @@
     /* Pequena animação de rotação */
     .navbar-toggler.collapsed i {
       transform: rotate(0deg);
-      color: 
     }
 
     .navbar-toggler:not(.collapsed) i {
@@ -315,6 +314,76 @@
   color: #000; /* contraste preto sobre amarelo claro */
 }
 
+#noticias-container {
+    max-width: 1200px; /* Limite a largura máxima do seu container de notícias */
+    margin: 40px auto; /* Centraliza o container */
+    padding: 0 20px; /* Espaçamento interno nas laterais */
+}
+
+.noticia-card {
+    display: flex; /* Habilita o Flexbox */
+    background-color: #fff; /* Fundo do card (ajuste conforme seu tema) */
+    border: 1px solid #e0e0e0; /* Borda leve */
+    border-radius: 8px; /* Cantos arredondados */
+    margin-bottom: 30px; /* Espaço entre os cards */
+    overflow: hidden; /* Garante que nada saia do limite do card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+/* --- Coluna da Imagem --- */
+.card-imagem {
+    flex: 0 0 40%; /* 40% da largura no desktop */
+    min-width: 200px; /* Garante uma largura mínima */
+}
+
+.card-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    display: block;
+}
+
+/* --- Coluna do Conteúdo --- */
+.card-body {
+    flex: 1 1 60%; /* Ocupa o restante (60% do espaço) */
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: space-between; /* Empurra o botão para baixo, se houver espaço */
+}
+
+.card-title {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card-source {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.card-botao {
+    align-self: flex-start; /* Alinha o botão à esquerda */
+    padding: 10px 20px;
+    background-color: #60988F; /* Cor primária do seu site (ex: azul) */
+    color: #BFDFDE;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-botao:hover {
+    background-color: #1f4955;
+    color: #BFDFDE;
+}
+
 /* pequena responsividade: círculo menor em telas pequenas */
 @media (max-width: 576px) {
   .today-circle-bg {
@@ -322,7 +391,32 @@
     height: 26px;
   }
   .day-number-on-circle { font-size: 0.9rem; }
+
+  .noticia-card {
+        flex-direction: column; /* Altera para layout de coluna (imagem em cima, texto embaixo) */
+    }
+
+    .card-imagem {
+        flex: 0 0 80%; 
+        min-width: auto;
+        /*max-height: 250px;  Limita a altura da imagem no mobile */
+    }
+    
+    .card-imagem img {
+        /* Ajuste para que a imagem não fique muito alta no topo do mobile */
+        height: 250px;
+        max-height: 250px;
+    }
+
+    .card-body {
+        padding: 20px; /* Reduz o padding para telas menores */
+    }
+    
+    .card-title {
+        font-size: 1.5em; /* Reduz o tamanho da fonte */
+    }
 }
+
 
 
 /*Mapa*/
@@ -410,7 +504,7 @@
 }
 
 .card-title{
-  font-size: 18px;+
+  font-size: 18px;
   font-weight: bold;
   color: #1f4955;
 }
@@ -450,6 +544,3 @@
   border-width: 0 !important;
   text-align: center;
 }
-
-
-
