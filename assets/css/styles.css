@@ -496,8 +496,8 @@
   vertical-align: middle;
 }
 
-.card-unidades{
-  border: none;
+.card.card-unidades{
+  border: 0px;
 }
 
 .campanha-card:hover {
