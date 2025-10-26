@@ -433,7 +433,7 @@
 .container-unidades {
   display: flex;
   flex-direction: column;
-  border-color: 2px solid #1f4955;
+  border-color: none;
 }
 
 .container-info {
