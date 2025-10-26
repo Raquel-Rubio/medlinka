@@ -46,7 +46,6 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  vertical-align: middle;
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -496,8 +495,8 @@
   vertical-align: middle;
 }
 
-.card-unidades{
-  border: none;
+.card.card-unidades{
+  border: 0px;
 }
 
 .campanha-card:hover {
