@@ -434,6 +434,7 @@
   display: flex;
   flex-direction: column;
   border-color: none;
+  justify-items: center;
 }
 
 .container-info {
@@ -443,11 +444,13 @@
   border-width: 0 !important;
   margin-bottom: 20px;
 }
-.container-dados {
-  border: none;
+.card-dados {
+  border-radius: 10px;
   line-height: 0.5;
   flex-direction: column;
   margin-inline: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /*titulos-uni-map*/
@@ -543,4 +546,30 @@
   border: none;
   border-width: 0 !important;
   text-align: center;
+}
+
+/*sobre*/
+.sobre-text {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 54px;
+}
+
+.titulos-sobre {
+  font-weight: bold;
+  color: #1f4955;
+  line-height: 1.8;
+  margin: auto;
+  padding: 10px;
+}
+
+.card-sobre {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  align-self: center;
+  padding: 10px;
 }
