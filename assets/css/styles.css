@@ -453,7 +453,6 @@ body {
   line-height: 0.5;
   flex-direction: column;
   margin-inline: auto;
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -581,17 +580,10 @@ body {
 }
 
 .imagem-sobre {
+  width: 10px;
+  height: auto;
   opacity: 0.5;
   object-fit: cover;
   display: flex;
 }
 
-.container-img-sobre {
-  max-width: 100px;
-
-
-
-  border: none;
-
-
-}
