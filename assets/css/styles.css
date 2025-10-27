@@ -563,6 +563,7 @@ body {
   border: none;
   border-width: 0 !important;
 }
+
 .sobre-text {
   max-width: 800px;
   margin: auto;
@@ -577,4 +578,20 @@ body {
   line-height: 1.8;
   margin: auto;
   padding: 10px;
+}
+
+.imagem-sobre {
+  opacity: 0.5;
+  object-fit: cover;
+  display: flex;
+}
+
+.container-img-sobre {
+  max-width: 100px;
+
+
+
+  border: none;
+
+
 }
