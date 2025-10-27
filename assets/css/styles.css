@@ -319,6 +319,7 @@ body {
 }
 
 #noticias-container {
+    max-width: 1200px; /* Limite a largura máxima do seu container de notícias */
     margin: 40px auto; /* Centraliza o container */
     padding: 0 20px; /* Espaçamento interno nas laterais */
 }
@@ -580,10 +581,16 @@ body {
 }
 
 .imagem-sobre {
-  width: 10px;
-  height: auto;
-  opacity: 0.5;
-  object-fit: cover;
   display: flex;
+  justify-content: center;   /* Centraliza horizontalmente */
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.imagem-sobre img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
 }
 
