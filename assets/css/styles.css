@@ -2,6 +2,11 @@
 *{
   font-family: 'Source Sans 3', sans-serif;
 }
+
+body {
+    overflow-y: scroll; /* Força a barra de rolagem vertical a ser sempre visível */
+}
+
 /*Inicio cabeçalho*/
 .navbar {
   margin-bottom: 0;
@@ -314,7 +319,6 @@
 }
 
 #noticias-container {
-    max-width: 1200px; /* Limite a largura máxima do seu container de notícias */
     margin: 40px auto; /* Centraliza o container */
     padding: 0 20px; /* Espaçamento interno nas laterais */
 }
