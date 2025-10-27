@@ -1,76 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Medlinka - Últimas Campanhas</title>   
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  </head>
-  <body data-page="ultimas-camapanhas">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="../assets/img/logo_medlinka.png" alt="Logo Medlinka" class="logo_medlinka">
-        </a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Alternar navegação">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item active"><a class="nav-link" href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
-            <li class="nav-item"><a class="nav-link" href="Noticias.html">Notícias</a></li>
-            <li class="nav-item"><a class="nav-link" href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
-            <li class="nav-item"><a class="nav-link" href="Sobre.html">Sobre</a></li>
-          </ul>
-        </div>
+<head>
+  <title>Medlinka - Últimas Campanhas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/img/favicon_medlinka.png"/>
+</head>
+
+<body data-page="ultimas-camapanhas">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../assets/img/logo_medlinka.png" alt="Logo Medlinka" class="logo_medlinka">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNavbar"
+        aria-controls="myNavbar" aria-expanded="false" aria-label="Alternar navegação">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
+          <li class="nav-item"><a class="nav-link" href="Noticias.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
+          <li class="nav-item"><a class="nav-link" href="Sobre.html">Sobre</a></li>
+        </ul>
       </div>
-    </nav>
-    <script>
-      $(document).ready(function () {
+    </div>
+  </nav>
+  <script>
+    $(document).ready(function () {
       $('.navbar-toggler').click(function () {
-      $(this).find('i').toggleClass('fa-bars fa-times');
+        $(this).find('i').toggleClass('fa-bars fa-times');
       });
-      });
-    </script>
-    <main>
-      <!-- <h1>Bom diaaa</h1> -->
-    </main>
-    <footer class="footer-medlinka">
-      <div class="container-footer">
-        <div class="footer-logo">
-          <img src="../assets/img/logo_medlinka_br.png" alt="Logo Medlinka" class="logo_footer">
-        </div>
-        <div class="footer-section">
-          <h4>Novidades</h4>
-          <ul>
-            <li><a href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
-            <li><a href="Noticias.html">Notícias</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Informações</h4>
-          <ul>
-            <li><a href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
-            <li><a href="Sobre.html">Sobre</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Contato</h4>
-          <ul class="footer-contact-list">
-            <li style="color: white;"><span class="icon">💬</span> (19) 98800-0000</li>
-            <li style="color: white;"><span class="icon">@</span>medlinkaatendimento@gmail.com</li>
-          </ul>
-        </div>
+    });
+  </script>
+
+  <section class="container" id="noticias-container">
+
+    <div class="noticia-card">
+      <div class="card-imagem">
+        <img src="../assets/img/campanha_01.png" alt="Campanha de Vacinação contra a Gripe 2025">
       </div>
-    </footer>
-  </body>
+      <div class="card-body">
+        <div class="card-title">Campanha de Vacinação contra a Gripe 2025</div>
+        <p class="card-date">Data: 07/04/2025 até o momento</p>
+        <p class="card-text">
+          Iniciada com foco em idosos, gestantes e profissionais de saúde, a campanha foi depois estendida a toda a população a partir de 6 meses.
+          A Secretaria de Saúde de Campinas projetou vacinar cerca de 478 mil pessoas, reduzindo casos graves e internações por influenza.
+        </p>
+        <a href="https://campinas.sp.gov.br/sites/vacina/gripe" target="_blank" class="card-botao">Saiba Mais</a>
+      </div>
+    </div>
+
+    <div class="noticia-card">
+      <div class="card-imagem">
+        <img src="../assets/img/campanha_06.jpg" alt="Campanha de Multivacinação 2025 - Crianças e adolescentes">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Campanha de Multivacinação 2025 - Crianças e adolescentes</div>
+        <p class="card-date">Data: 06/10/2025 até 31/10/2025</p>
+        <p class="card-text">
+          Voltada a atualizar a caderneta vacinal de crianças e adolescentes até 14 anos, incluindo aplicação da vacina HPV até 19 anos. 
+          As ações ocorreram em todos os centros de saúde de Campinas, com foco em ampliar a cobertura e combater a desinformação sobre imunização.
+        </p>
+        <a href="https://campinas.sp.gov.br/noticias/multivacinacao-saude-de-campinas-tem-abertura-extra-de-css-e-aplica-doses-em-mercado-e-shopping-131409" target="_blank" class="card-botao">Saiba Mais</a>
+      </div>
+    </div>
+
+    <div class="noticia-card">
+      <div class="card-imagem">
+        <img src="../assets/img/campanha_05.jpg" alt="Outubro Rosa 2025 - Prevenção do câncer de mama">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Outubro Rosa 2025 - Prevenção do câncer de mama</div>
+        <p class="card-date">Data: 01/10/2025 até 31/10/2025</p>
+        <p class="card-text">
+          Durante todo o mês, unidades de saúde realizaram mutirões de mamografia, palestras e caminhadas. 
+          A ação destacou a importância do diagnóstico precoce e incentivou o autoexame e consultas regulares.
+        </p>
+        <a href="https://campinas.sp.gov.br/sites/outubrorosa/programacao-nas-unidades-de-saude" target="_blank" class="card-botao">Saiba Mais</a>
+      </div>
+    </div>
+
+    <div class="noticia-card">
+      <div class="card-imagem">
+        <img src="../assets/img/campanha_04.webp" alt="Julho Verde 2025 - Câncer de cabeça e pescoço">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Julho Verde 2025 - Câncer de cabeça e pescoço</div>
+        <p class="card-date">Data: 01/07/2025 até 31/07/2025</p>
+        <p class="card-text">
+          A campanha, alinhada ao movimento nacional, promoveu ações de prevenção e diagnóstico precoce de tumores na boca, garganta e laringe. 
+          Incluiu palestras em unidades de saúde, exames gratuitos e distribuição de material educativo sobre fatores de risco como tabagismo e álcool.
+        </p>
+        <a href="https://sampi.net.br/campinas/noticias/2915615/campinas/2025/07/campinas-registra-198-casos-de-cancer-de-cabeca-e-pescoco-por-ano" target="_blank" class="card-botao">Saiba Mais</a>
+      </div>
+    </div>
+
+    <div class="noticia-card">
+      <div class="card-imagem">
+        <img src="../assets/img/campanha_03.webp" alt="Ação especial de detecção de câncer de pele 2025">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Ação especial de detecção de câncer de pele 2025</div>
+        <p class="card-date">Data: 16/06/2025</p>
+        <p class="card-text">
+          Mutirão gratuito realizado em unidades de saúde e com apoio do Hospital de Clínicas da Unicamp. 
+          Médicos dermatologistas realizaram exames clínicos e orientações sobre proteção solar, com foco em detecção precoce entre idosos e trabalhadores expostos ao sol.
+        </p>
+        <a href="https://www.acidadeon.com/campinas/cotidiano/campinas-realiza-acao-gratuita-para-deteccao-de-cancer-de-pele/ " target="_blank" class="card-botao">Saiba Mais</a>
+      </div>
+    </div>
+
+    <div class="noticia-card">
+      <div class="card-imagem">
+        <img src="../assets/img/campanha_02.jpg" alt="Evento Saúde Integral - Dia de Prevenção à Hipertensão 2025">
+      </div>
+      <div class="card-body">
+        <div class="card-title">Evento Saúde Integral - Dia de Prevenção à Hipertensão 2025</div>
+        <p class="card-date">Data: 17/05/2025</p>
+        <p class="card-text">
+          Ação pública na Lagoa do Taquaral com check-ups gratuitos, aferição de pressão arterial, testes de glicemia, bioimpedância e orientações sobre alimentação e atividade física. 
+          O evento reforçou a importância da detecção precoce da hipertensão e hábitos saudáveis.
+        </p>
+        <a href="https://campinas.sp.gov.br/noticias/rh-inicia-campanha-de-prevencao-a-hipertensao-nesta-segunda-feira-dia-18-79102" target="_blank" class="card-botao">Saiba Mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer-medlinka">
+    <div class="container-footer">
+      <div class="footer-logo">
+        <img src="../assets/img/logo_medlinka_br.png" alt="Logo Medlinka" class="logo_footer">
+      </div>
+      <div class="footer-section">
+        <h4>Novidades</h4>
+        <ul>
+          <li><a href="Ultimas_Campanhas.html">Últimas Campanhas</a></li>
+          <li><a href="Noticias.html">Notícias</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Informações</h4>
+        <ul>
+          <li><a href="Unidades_Atendimento.html">Unidades de Atendimento</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <ul class="footer-contact-list">
+          <li style="color: white;"><span class="icon">💬</span> (19) 98800-0000</li>
+          <li style="color: white;"><span class="icon">@</span>medlinkaatendimento@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
