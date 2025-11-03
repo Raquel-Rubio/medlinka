@@ -317,7 +317,7 @@ body {
   font-weight: 700;
   color: #000; /* contraste preto sobre amarelo claro */
 }
-
+/*Fim do Calendário*/
 #noticias-container {
     max-width: 1200px; /* Limite a largura máxima do seu container de notícias */
     margin: 40px auto; /* Centraliza o container */
