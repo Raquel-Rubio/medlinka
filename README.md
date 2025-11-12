@@ -21,7 +21,7 @@ https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-
 ## Integrantes 
 <br>-> Letícia Mayumi Muramoto - Documentação e Front-End 
 <br>-> Raquel Rubio de Souza - Back-End e Front-End
-<br>-> Sophia Bastista Joriatti - Full Stack e 
+<br>-> Sophia Bastista Joriatti - Full Stack 
 
 ## Status do Projeto
 Em desenvolvimento 
