@@ -37,8 +37,8 @@
 <br>|-----/Noticias.html - Mostrará as notícias do mês vigente, anteriores e posteriores.
 <br>|-----/Sobre.html - Descrição sobre o projeto e sua finalidade.
 <br>|-----/Ultimas_Campanhas.html - Mostrará as campanhas do mês vigente, anteriores e posteriores.
-<br>|-----/Unidades_Atendimento.html - Mostrará um mapa que terá marcado as unidades de saúde de Campinas, o qual ao clicar redirecionará ao Google Maps. Também tera abaixo a descrição das unidades, com    <br>|                                  endereço, horário de funcionamento e as campanhas que estão realizando.
-<br>|-----/footer.html 
+<br>|-----/Unidades_Atendimento.html - Mostrará um mapa que terá marcado as unidades de saúde de Campinas, o qual ao clicar redirecionará ao Maps da . Também tera abaixo a descrição das unidades, com                                             endereço, horário de funcionamento e as campanhas que estão realizando.
+<br>|-----/footer.html - Componete reutilizável para todas as páginas do site.
 <br>|-----/header.html - Componete reutilizável para todas as páginas do site.     
 <br>|-----/index.html - Página inicial do site, mostrará os carrosseis de campanhas que estão sendo realizadas ou que serão futuramente e notícias sobre a saúde, além de no final conter um calendário em                            que mostrará visualmente os dias em que as campanhas serão realizadas e sua proximidade em uma tabela de cores.
 
