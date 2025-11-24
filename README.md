@@ -5,7 +5,7 @@ O Medlinka é uma plataforma de saúde que reúne um calendário social com camp
 
 ## Tecnologias Utilizadas
 <br>--> HTML5, CSS3, JavaScript
---> Framework: Bootstrap4
+<br>--> Framework: Bootstrap4
 
 ## Estrutura do Projeto
 <br>--> Index - Página inicial do site, mostrará os carrosseis de campanhas que estão sendo realizadas ou que serão futuramente e notícias sobre a saúde, além de no final conter um calendário em que mostrará visualmente os dias em que as campanhas serão realizadas e sua proximidade em uma tabela de cores.
@@ -16,7 +16,7 @@ O Medlinka é uma plataforma de saúde que reúne um calendário social com camp
 <br>--> Contato - Página com email e número para comunicação com os responsáveis do site (pode ser substituída por um assistente virtual que caso necessário irá direcionar a um assistente humano).
 
 ## Instruções de Instalação e Execução
-  ->
+<br>--> 
 
 ## Protótipo
 https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-id=1-2418&t=r7MoRt0VEImDwH0z-1
