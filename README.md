@@ -1,7 +1,7 @@
 # Medlinka
 
 ## Descrição
-O Medlinka é uma plataforma de saúde que reúne um calendário social com campanhas gratuitas, notícias e informações da área, além de ajudar a população a localizar facilmente as unidades de saúde mais próximas.
+<br>O Medlinka é uma plataforma de saúde que reúne um calendário social com campanhas gratuitas, notícias e informações da área, além de ajudar a população a localizar facilmente as unidades de saúde mais próximas.
 
 ## Tecnologias Utilizadas
 <br>--> HTML5, CSS3, JavaScript
@@ -19,7 +19,7 @@ O Medlinka é uma plataforma de saúde que reúne um calendário social com camp
 <br>--> 
 
 ## Protótipo
-https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-id=1-2418&t=r7MoRt0VEImDwH0z-1
+<br>https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-id=1-2418&t=r7MoRt0VEImDwH0z-1
 
 ## Integrantes 
 <br>-> Letícia Mayumi Muramoto - Documentação e Front-End 
@@ -27,5 +27,5 @@ https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-
 <br>-> Sophia Bastista Joriatti - Full Stack 
 
 ## Status do Projeto
-Em desenvolvimento 
-Primeira versão estimada para [03/12/2025]
+<br>Em desenvolvimento 
+<br>Primeira versão estimada para [03/12/2025]
