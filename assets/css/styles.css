@@ -141,6 +141,22 @@ body {
   .nav-list.active {
     display: block; /* Mostra a lista de links quando a classe 'active' for adicionada */
   }
+
+  /* Carroseis */
+  #campanhasPrev, #campanhasNext, 
+  #noticiasPrev, #noticiasNext {
+    display: none !important;
+  }
+
+  .campanha-card, .noticia-card {
+    flex-direction: column;
+  }
+  .campanhas-carousel {
+    flex-direction: column; /* Para de scroll horizontal */
+    overflow-x: visible;
+    align-items: center;
+  }
+
 }
 
 /*Fim do cabeçalho*/
@@ -289,6 +305,7 @@ body {
   .form-group label {
     font-size: 0.9rem;
   }
+
 }
 /* círculo preenchido atrás do número do dia atual */
 .today-circle-bg {
@@ -600,4 +617,3 @@ body {
   height: auto;
   border-radius: 8px;
 }
-
