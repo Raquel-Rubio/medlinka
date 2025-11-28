@@ -33,7 +33,6 @@
 <br>|   |-----/script.js      
 <br> 
 <br>/frontend (páginas HTML do sistema) 
-<br>|-----/Contato.html 
 <br>|-----/Noticias.html - Mostrará as notícias do mês vigente, anteriores e posteriores.
 <br>|-----/Sobre.html - Descrição sobre o projeto e sua finalidade.
 <br>|-----/Ultimas_Campanhas.html - Mostrará as campanhas do mês vigente, anteriores e posteriores.
@@ -43,7 +42,7 @@
 <br>|-----/index.html - Página inicial do site, mostrará os carrosseis de campanhas que estão sendo realizadas ou que serão futuramente e notícias sobre a saúde, além de no final conter um calendário em                            que mostrará visualmente os dias em que as campanhas serão realizadas e sua proximidade em uma tabela de cores.
 
 ## Instruções de Instalação e Execução
-<br>--> Por medidas de seguranças o navegador não permite pegar as APIs de notícias, dessa forma 
+<br>-->
 
 ## Protótipo
 <br>https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-id=1-2418&t=r7MoRt0VEImDwH0z-1
