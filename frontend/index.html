@@ -56,24 +56,24 @@
                 <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
               </div>
               <div class="campanha-card card shadow-sm">
-                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
+                <img src="../assets/img/campanha_01.png" class="card-img-top" alt="Campanha de Vacinação contra a Gripe 2025">
                 <div class="card-body">
-                  <h5 class="card-title">Vacinação contra a gripe</h5>
-                  <p class="card-text">Está ativa até 31 de agosto de 2025 em mais de 60 (ou 66) centros de saúde da cidade. A vacina...</p>
+                  <a href="https://campinas.sp.gov.br/sites/vacina/gripe" class="card-title">Vacinação contra a gripe</a>
+                  <p class="card-text">Iniciada com foco em idosos, gestantes e profissionais de saúde, a campanha foi depois estendida a toda a...</p>
                 </div>
               </div>
               <div class="campanha-card card shadow-sm">
-                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Shopping Bandeiras">
+                <img src="../assets/img/campanha_06.jpg" class="card-img-top" alt="Shopping Bandeiras">
                 <div class="card-body">
-                  <h5 class="card-title">Vacinação no Shopping Bandeiras</h5>
-                  <p class="card-text">Neste sábado, 23 de agosto de 2025, haverá uma edição especial de vacinação...</p>
+                  <a href="https://campinas.sp.gov.br/noticias/multivacinacao-saude-de-campinas-tem-abertura-extra-de-css-e-aplica-doses-em-mercado-e-shopping-131409" class="card-title">Campanha de Multivacinação 2025 - Crianças e adolescentes</a>
+                  <p class="card-text">Voltada a atualizar a caderneta vacinal de crianças e adolescentes até 14 anos, incluindo...</p>
                 </div>
               </div>
               <div class="campanha-card card shadow-sm">
-                <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Viracopos">
+                <img src="../assets/img/campanha_05.jpg" class="card-img-top" alt="Viracopos">
                 <div class="card-body">
-                  <h5 class="card-title">Vacinação em Viracopos</h5>
-                  <p class="card-text">Está acontecendo uma ação de vacinação no Aeroporto Internacional de Viracopos, focada na...</p>
+                  <a href="https://campinas.sp.gov.br/sites/outubrorosa/programacao-nas-unidades-de-saude" class="card-title">Outubro Rosa 2025 - Prevenção do câncer de mama</a>
+                  <p class="card-text">Durante todo o mês, unidades de saúde realizaram mutirões de mamografia, palestras...</p>
                 </div>
               </div>
               <div>
@@ -82,15 +82,6 @@
             </div>
           </div>
         </section>
-        <script>
-          const carousel = document.querySelector('.campanhas-carousel');
-          document.getElementById('campanhasPrev').addEventListener('click', () => {
-            carousel.scrollBy({ left: -300, behavior: 'smooth' });
-          });
-          document.getElementById('campanhasNext').addEventListener('click', () => {
-            carousel.scrollBy({ left: 300, behavior: 'smooth' });
-          });
-        </script>
       </section>
       <section>
         <section class="campanhas-section">
@@ -100,7 +91,7 @@
             </div>
             <div class="campanhas-carousel">
               <div>
-                <button class="btn btn-sm me-2" id="campanhasPrev">❮</button>
+                <button class="btn btn-sm me-2" id="noticiasPrev">❮</button>
               </div>
               <div class="campanha-card card shadow-sm">
                 <img src="../assets/img/noticia_1.jpg" class="card-img-top" alt="Vacinação Gripee">
@@ -124,20 +115,11 @@
                 </div>
               </div>
               <div>
-                <button class="btn btn-sm" id="campanhasNext">❯</button> 
+                <button class="btn btn-sm" id="noticiasNext">❯</button> 
               </div>
             </div>
           </div>
         </section>
-        <script>
-          const carousel2 = document.querySelector('.noticias-carousel');
-          document.getElementById('noticiasPrev').addEventListener('click', () => {
-          carousel.scrollBy({ left: -300, behavior: 'smooth' });
-          });
-          document.getElementById('noticiasNext').addEventListener('click', () => {
-          carousel2.scrollBy({ left: 300, behavior: 'smooth' });
-          });
-        </script>
       </section>
       <section>
         <div class="container-msg container mt-3">
@@ -221,6 +203,7 @@
         </div>
       </div>
       <script src="../assets/js/calendar.js"></script>
+      <script src="../assets/js/script.js"></script>
     </main>
     <br>
     <footer class="footer-medlinka">

@@ -31,6 +31,26 @@ noticias.forEach((noticia) => {
 })
 }
 
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Carrossel Campanhas (primeira seção)
+    document.getElementById('campanhasPrev').addEventListener('click', () => {
+        document.querySelector('.campanhas-carousel').scrollBy({left: -300, behavior: 'smooth'});
+    });
+    document.getElementById('campanhasNext').addEventListener('click', () => {
+        document.querySelector('.campanhas-carousel').scrollBy({left: 300, behavior: 'smooth'});
+    });
+    
+    // Carrossel Notícias (segunda seção) - APÓS mudar IDs para noticiasPrev/noticiasNext
+    document.getElementById('noticiasPrev').addEventListener('click', () => {
+        document.querySelectorAll('.campanhas-carousel')[1].scrollBy({left: -300, behavior: 'smooth'});
+    });
+    document.getElementById('noticiasNext').addEventListener('click', () => {
+        document.querySelectorAll('.campanhas-carousel')[1].scrollBy({left: 300, behavior: 'smooth'});
+    });
+});
+
+
 // Estrutura do HTML que deve ser gerada para cada notícia:
     //   <div class="noticia-card">
     //     <div class="card-imagem">
