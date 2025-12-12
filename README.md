@@ -42,7 +42,16 @@
 <br>|-----/index.html - Página inicial do site, mostrará os carrosseis de campanhas que estão sendo realizadas ou que serão futuramente e notícias sobre a saúde, além de no final conter um calendário em                            que mostrará visualmente os dias em que as campanhas serão realizadas e sua proximidade em uma tabela de cores.
 
 ## Instruções de Instalação e Execução
-<br>-->
+<br>-->Medlinka será realizado em uma plataforma de hospedagem em um servidor local que atualiza automaticamente a página do navegador sempre que você salva o código-fonte. Dessa forma, é necessário a instalação da ferramenta Visual Studio, juntamente com a extensão Live Server. Por seguinte, os seguintes passo a passo para como usar o nosso site são: 
+<br> 1. Instale a ferramenta Visual Studio. 
+<br> 2. Instale a extensão Live Server. 
+<br> 3. Baixe no GitHub o código fonte contendo as pastas do site. 
+<br> 4. Descompacte a pasta .zip do site. 
+<br> 5. Abra a ferramenta Visual Studio e vá em arquivos e selecione a pasta descompactada. 
+<br> 6. Selecione no canto inferior direito da ferramenta na qual apresenta escrito Live Server. 
+<br> 7. Selecione a única pasta que irá aparecer no navegador. 
+<br> 8. Logo em seguida selecione a pasta frontend. 
+<br> 9. Pronto para o uso.  
 
 ## Protótipo
 <br>https://www.figma.com/proto/T9WNQVdZDn7nO3ELbRc54r/Agendamento-M%C3%A9dico?node-id=1-2418&t=r7MoRt0VEImDwH0z-1
